@@ -134,3 +134,4 @@ store!
 
 More information can be found
 [here](https://godoc.org/github.com/starkandwayne/shield/plugin/swift).
+# ShieldLocal
