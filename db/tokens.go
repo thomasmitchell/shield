@@ -58,8 +58,6 @@ func (db *DB) doGetAllAuthTokens(filter *AuthTokenFilter) ([]*AuthToken, error) 
 
 	l := []*AuthToken{}
 	query, args := filter.Query()
-	db.exclusive.Lock()
-	defer db.exclusive.Unlock()
 	r, err := db.query(query, args...)
 	if err != nil {
 		return l, err
